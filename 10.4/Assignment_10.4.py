@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r'C:\Temp\ah_item.csv').set_index('Unnamed: 0')
+df = pd.read_csv(r'ah_item_small.csv').set_index('Unnamed: 0')
 df2= df.sample(50000)
 
 df.hist(column = 'bid', bins = 100)
